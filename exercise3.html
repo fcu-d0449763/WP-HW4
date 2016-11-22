@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Exercise1</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script>
+         $(document).ready(function () {
+         	$("#1").click(function () {
+         		$("#fei").hide().fadeIn(3000).slideUp(2000).slideDown(2000, function () {
+         			alert("The cat is call A-fei .");
+         		});
+         	});
+         	$("#stop").click(function () {
+         		$("#fei").stop();
+         	});
+         });
+  
+      </script>
+   </head>
+   <body>
+      <body>
+         <h1>The picture is magic!</h1>
+         <button id="1">Start</button>
+         <button id="stop">Stop</button></br>
+         <img src="img/afei.jpg" width="300" height="400" id="fei"/></br>
+   </body>
+   </body>
+</html>
